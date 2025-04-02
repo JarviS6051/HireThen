@@ -1,0 +1,112 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+*.apk
+*.aab
+*.ipa
+
+# Metro
+.metro-health-check*
+.metro-cache/
+
+# Build artifacts
+android/app/build/
+ios/build/
+ios/Pods/
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+debug.log
+.output
+
+# Environment variables and secrets
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+google-services.json
+GoogleService-Info.plist
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.pem
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+tmp/
+.tmp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Expo publish
+.publish/
+
+# Credentials and authentication
+credentials.json
+auth.json
+
+# Generated files
+app-example
+android/.gradle
+android/build
+android/app/release
+
+# Log files
+logs/
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# EAS
+.eas/
