@@ -47,18 +47,35 @@ export const BUDGET_PERIODS = [
 //     background: '#F2F2F7'
 // };
 
+// export const COLORS = {
+//     primary: '#2C3E50',  // Muted Navy
+//     secondary: '#BDC3C7', // Light Gray
+//     success: '#27AE60',  // Soft Green
+//     danger: '#C0392B',   // Deep Red
+//     warning: '#E67E22',  // Orange
+//     info: '#2980B9',     // Deep Blue
+//     light: '#ECF0F1',    // Soft White
+//     dark: '#2C3E50',     // Dark Navy
+//     white: '#FFFFFF',
+//     black: '#000000',
+//     gray: '#7F8C8D',     // Neutral Gray
+//     lightGray: '#D5D8DC',
+//     background: '#F4F6F7' // Off-White Background
+// };
+
+
 export const COLORS = {
-    primary: '#2C3E50',  // Muted Navy
-    secondary: '#BDC3C7', // Light Gray
-    success: '#27AE60',  // Soft Green
-    danger: '#C0392B',   // Deep Red
-    warning: '#E67E22',  // Orange
-    info: '#2980B9',     // Deep Blue
-    light: '#ECF0F1',    // Soft White
-    dark: '#2C3E50',     // Dark Navy
+    primary: '#2E7D32',  // Forest Green
+    secondary: '#A1887F', // Earthy Brown
+    success: '#558B2F',  // Olive Green
+    danger: '#D84315',   // Warm Terracotta
+    warning: '#F9A825',  // Golden Sun
+    info: '#0277BD',     // Deep Blue Ocean
+    light: '#E8F5E9',    // Soft Green Tint
+    dark: '#263238',     // Dark Teal
     white: '#FFFFFF',
     black: '#000000',
-    gray: '#7F8C8D',     // Neutral Gray
-    lightGray: '#D5D8DC',
-    background: '#F4F6F7' // Off-White Background
+    gray: '#90A4AE',     // Slate Gray
+    lightGray: '#CFD8DC',
+    background: '#F5F5DC' // Light Beige
 };
