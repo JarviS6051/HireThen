@@ -1,187 +1,201 @@
-# Personal Finance Tracker
+Personal Finance Tracker
 
-A cross-platform mobile application for personal finance management built with React Native (frontend) and Node.js with Express & MongoDB (backend).
+A cross-platform mobile application designed to help users manage their personal finances efficiently. Built with React Native for the frontend and Node.js with Express & MongoDB for the backend.
 
-## Features
+Features
 
-### User Authentication
-- Secure JWT-based authentication
-- User registration and login
-- Password encryption using bcrypt
+User Authentication
 
-### Dashboard
-- Overview of financial status
-- Income vs expense visualization
-- Expense breakdown by category
-- Recent transactions display
-- Current balance calculation
+Secure authentication using JWT
 
-### Transaction Management
-- Add, edit, and delete transactions
-- Filter transactions by type (income/expense)
-- Support for one-time and recurring transactions
-- Transaction categorization
-- Pagination for large transaction lists
+User registration and login functionality
 
-### Budget Tracking
-- Create budgets for different expense categories
-- Set budget periods (daily, weekly, monthly, yearly)
-- Configurable alert thresholds
-- Visual indicators for budget status
-- Budget vs actual spending comparison
+Password encryption with bcrypt for added security
 
-### UI/UX Features
-- Cross-platform compatibility (iOS & Android)
-- Intuitive user interface
-- Interactive charts and visualizations
-- Pull-to-refresh for data updates
-- Offline data persistence
+Dashboard
 
-## Technology Stack
+Overview of financial health
 
-### Frontend
-- **React Native** - Cross-platform mobile framework
-- **Expo** - React Native development platform
-- **React Navigation** - Navigation library
-- **React Native Chart Kit** - Data visualization
-- **AsyncStorage** - Local data persistence
-- **Axios** - HTTP client for API requests
+Income vs expense visualization
 
-### Backend
-- **Node.js** - JavaScript runtime
-- **Express** - Web application framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB object modeling
-- **JWT** - Authentication mechanism
-- **Bcrypt** - Password hashing
+Categorized expense breakdown
 
-## Project Structure
+Recent transactions display
 
-```
+Real-time balance calculation
+
+Transaction Management
+
+Add, edit, and remove transactions
+
+Filter transactions by type (income/expense)
+
+Support for recurring and one-time transactions
+
+Categorization for better tracking
+
+Pagination for managing large datasets
+
+Budget Tracking
+
+Create and manage budgets for various categories
+
+Custom budget periods (daily, weekly, monthly, yearly)
+
+Alert system for overspending
+
+Visual representation of budget utilization
+
+Comparison of budgeted vs actual expenses
+
+UI/UX Enhancements
+
+Cross-platform support (iOS & Android)
+
+Modern and intuitive interface
+
+Interactive financial charts
+
+Pull-to-refresh for updated data
+
+Offline data access for seamless experience
+
+Technology Stack
+
+Frontend
+
+React Native - Mobile app framework
+
+Expo - Development and deployment tool
+
+React Navigation - Smooth navigation system
+
+React Native Chart Kit - Graphical data representation
+
+AsyncStorage - Local data storage
+
+Axios - API request handling
+
+Backend
+
+Node.js - Backend runtime environment
+
+Express - Web application framework
+
+MongoDB - NoSQL database for efficient data storage
+
+Mongoose - ORM for database management
+
+JWT - Secure authentication mechanism
+
+Bcrypt - User password encryption
+
+Project Structure
+
 finance-tracker/
-├── backend/               # Backend Node.js application
-│   ├── config/            # Configuration files
-│   ├── controllers/       # API controllers
-│   ├── middleware/        # Custom middleware
-│   ├── models/            # Mongoose models
-│   ├── routes/            # API routes
-│   └── utils/             # Utility functions
-│
-└── frontend/              # React Native mobile application
-    ├── assets/            # App assets (images, fonts)
-    └── src/
-        ├── api/           # API service functions
-        ├── app/           # Expo Router configuration
-        ├── components/    # Reusable UI components
-        ├── context/       # Global state management
-        ├── navigation/    # Navigation configuration
-        ├── screens/       # App screens
-        └── utils/         # Utility functions
-```
+   backend/               # Backend API
+   config/            # Configurations
+   controllers/       # API controllers
+   middleware/        # Authentication & validation
+   models/            # Database models
+   routes/            # API route handlers
+   utils/             # Utility functions
 
-## Setup and Installation
+ frontend/              # Mobile application
+   assets/            # Static assets
+   src/
+   api/           # API services
+   app/           # Navigation setup
+   components/    # Reusable UI elements
+   context/       # Global state management
+   navigation/    # Routing system
+   screens/       # Application screens
+   utils/         # Utility functions
 
-### Prerequisites
-- Node.js (v14+)
-- npm or yarn
-- MongoDB
-- Expo CLI
+Setup and Installation
 
-### Backend Setup
-1. Navigate to the backend directory:
-   ```
-   cd backend
-   ```
+npm
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
+MongoDB
 
-3. Create a `.env` file with the following variables:
-   ```
-   PORT=5000
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
+Expo CLI
 
-4. Start the server:
-   ```
-   npm run dev
-   ```
+Backend Setup
 
-### Frontend Setup
-1. Navigate to the frontend directory:
-   ```
-   cd frontend
-   ```
+Navigate to the backend directory:
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
+cd backend
 
-3. Update the API URL in `src/utils/constants.js` to point to your backend server:
-   ```javascript
-   export const API_URL = 'http://backend-url:5000/api';
-   ```
+Install dependencies:
 
-4. Start the Expo development server:
-   ```
-   npm start
-   ```
+npm install
 
-5. Run on a device or emulator:
-   - Scan the QR code with the Expo Go app on your device
-   - Press 'a' to run on an Android emulator
-   - Press 'i' to run on an iOS simulator
+Configure environment variables in .env:
 
-## API Endpoints
+PORT=3000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=jwt_secret
 
-### Authentication
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/me` - Get current user info
+Start the backend server:
 
-### Transactions
-- `GET /api/transactions` - Get all transactions
-- `GET /api/transactions/:id` - Get a single transaction
-- `POST /api/transactions` - Create a transaction
-- `PUT /api/transactions/:id` - Update a transaction
-- `DELETE /api/transactions/:id` - Delete a transaction
-- `GET /api/transactions/summary` - Get transaction summary
+npm run dev
 
-### Budgets
-- `GET /api/budgets` - Get all budgets
-- `GET /api/budgets/:id` - Get a single budget
-- `POST /api/budgets` - Create a budget
-- `PUT /api/budgets/:id` - Update a budget
-- `DELETE /api/budgets/:id` - Delete a budget
-- `GET /api/budgets/status` - Get budget status with alerts
+Frontend Setup
 
-## Key Features Implementation
+Navigate to the frontend directory:
 
-### Transaction Management
-The app allows users to track their income and expenses with detailed categorization. Each transaction can be one-time or recurring with various frequency options (daily, weekly, monthly, yearly). The transaction list provides filtering capabilities and shows the total income and expenses at the top.
+cd frontend
 
-### Budget System
-Users can set budgets for different expense categories with customizable periods and alert thresholds. The app calculates spending against each budget and provides visual feedback when spending approaches or exceeds the set threshold. The budget screen provides an overall view of all budgets and their current status.
+Install dependencies:
 
-### Data Visualization
-The dashboard presents financial information through interactive charts:
-- Pie chart showing expense distribution by category
-- Bar chart comparing income vs expenses
-- Progress indicators for budget utilization
+npm install
 
-### Offline Support
-The app implements a caching strategy using AsyncStorage to provide offline access to previously loaded data. This ensures users can view their financial information even without an internet connection.
+Set the API URL in src/utils/constants.js:
 
-## Future Enhancements
-- Push notifications for budget alerts
-- Expense forecasting
-- Financial goal setting
-- Data export functionality
+export const API_URL = 'http://backend-url:3000/api';
 
+Start the Expo development server:
 
-## License
-This project is licensed under the MIT License.
+npm start
+
+Run on a device or emulator:
+
+Scan the QR code using the Expo Go app
+
+API Endpoints
+
+Authentication
+
+POST /api/auth/register - Register a new account
+
+POST /api/auth/login - Authenticate user
+
+GET /api/auth/me - Retrieve user details
+
+Transactions
+
+GET /api/transactions - Retrieve all transactions
+
+GET /api/transactions/:id - Retrieve a specific transaction
+
+POST /api/transactions - Add a new transaction
+
+PUT /api/transactions/:id - Modify a transaction
+
+DELETE /api/transactions/:id - Remove a transaction
+
+GET /api/transactions/summary - Get transaction summary
+
+Budgets
+
+GET /api/budgets - List all budgets
+
+GET /api/budgets/:id - Retrieve a specific budget
+
+POST /api/budgets - Create a budget plan
+
+PUT /api/budgets/:id - Update an existing budget
+
+DELETE /api/budgets/:id - Remove a budget
+
+GET /api/budgets/status - Check budget health & alerts
