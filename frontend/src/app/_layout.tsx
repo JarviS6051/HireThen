@@ -2,10 +2,11 @@
 import { Stack } from "expo-router";
 import { Platform } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import { Fragment } from "react";
 
 export default function RootLayout() {
   return (
-    <>
+    <Fragment>
       <StatusBar style="dark" backgroundColor="white" />
       <Stack
         screenOptions={{
@@ -21,6 +22,6 @@ export default function RootLayout() {
           },
         }}
       />
-    </>
+    </Fragment>
   );
 }
