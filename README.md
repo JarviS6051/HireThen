@@ -1,4 +1,6 @@
-Personal Finance Tracker
+Here's Expo App Link - https://expo.dev/artifacts/eas/eEnDyjsmJXSQZwfKGbpcxP.aab
+
+Finance Tracker
 
 A cross-platform mobile application designed to help users manage their personal finances efficiently. Built with React Native for the frontend and Node.js with Express & MongoDB for the backend.
 
@@ -132,9 +134,10 @@ npm install
 
 Configure environment variables in .env:
 
-PORT=3000
+
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=jwt_secret
+PORT=3000
 
 Start the backend server:
 

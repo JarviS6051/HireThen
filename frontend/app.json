@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -19,15 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jarvis6051.financetracker"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "860a5c0c-e5a4-48af-b1cd-6c4a4e354b26"
+        "projectId": "3d26c26a-72e4-42dc-b090-4b2764835b0e"
       }
-    }
+    },
+    "owner": "jarvis6051"
   }
 }
